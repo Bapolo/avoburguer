@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/avoburguer/static/css/main.e87034ae.css",
-    "main.js": "/avoburguer/static/js/main.191a569a.js",
+    "main.css": "/avoburguer/static/css/main.9d5841d1.css",
+    "main.js": "/avoburguer/static/js/main.263fe8ee.js",
     "static/js/453.b1a3a410.chunk.js": "/avoburguer/static/js/453.b1a3a410.chunk.js",
     "index.html": "/avoburguer/index.html",
-    "main.e87034ae.css.map": "/avoburguer/static/css/main.e87034ae.css.map",
-    "main.191a569a.js.map": "/avoburguer/static/js/main.191a569a.js.map",
+    "main.9d5841d1.css.map": "/avoburguer/static/css/main.9d5841d1.css.map",
+    "main.263fe8ee.js.map": "/avoburguer/static/js/main.263fe8ee.js.map",
     "453.b1a3a410.chunk.js.map": "/avoburguer/static/js/453.b1a3a410.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e87034ae.css",
-    "static/js/main.191a569a.js"
+    "static/css/main.9d5841d1.css",
+    "static/js/main.263fe8ee.js"
   ]
 }
