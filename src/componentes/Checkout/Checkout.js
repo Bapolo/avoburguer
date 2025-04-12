@@ -3,7 +3,6 @@ import Barra from "../Barra/Barra"
 import { BiSearchAlt2 } from "react-icons/bi";
 import dados from '../../backend/dados.json'
 import FormularioPagamento from "../FormularioPagamento/FormularioPagamento";
-import BtnAcao from "../BtnAcao/BtnAcao";
 import styles from './Checkout.module.css'
 import { useNavigate,useParams } from 'react-router-dom'
 
@@ -30,8 +29,6 @@ function Checkout()
             </div>
 
             <FormularioPagamento />
-
-            <BtnAcao dados = {`${1000 + Number(preco) + (Number(preco) * 0.1)} `} texto = "Peça agora!" tipo = "preto" classTip = "precoBackgroundTransparente" onClick = { () => navegar('/sucesso')}/>
         </div>
     )
 }

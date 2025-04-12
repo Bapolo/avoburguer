@@ -1,6 +1,4 @@
 import Botao from '../Botao/Botao'
-import styles from './Contador.module.css'
-
 function Contador({ contador,setContador })
 {
     function aumentar()
@@ -17,11 +15,11 @@ function Contador({ contador,setContador })
     }
 
     return (
-        <div className = { styles.contador }>
-            <p>Porções </p>
-            <Botao texto = "-" onClick = { diminuir } tipo = "vermelho"/>
+        <div className = "w-full flex items-center justify-end gap-4 p-4 mt-4">
+            <p className="font-bold">Porções </p>
+            <Botao texto = "-" onClick = { diminuir } className = "bg-red-600 py-2 px-4 rounded-xl text-white"/>
             { contador }
-            <Botao texto = "+" onClick = { aumentar } tipo = "vermelho"/>
+            <Botao texto = "+" onClick = { aumentar } className = "bg-red-600 py-2 px-4 rounded-xl text-white"/>
         </div>
     )
 }

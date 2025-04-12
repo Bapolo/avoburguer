@@ -1,10 +1,10 @@
-import styles from './Botao.module.css'
 
-function Boatao({ texto,onClick,tipo,style })
+
+function Botao({ texto,onClick, className })
 {
     return (
-            <button type = "button" onClick = {onClick} className = {`${ styles.btn } ${ styles.tipo }`} style = {style}>{ texto }</button>
+            <button type = "button" onClick = {onClick} className={ className }>{ texto }</button>
     )
 }
 
-export default Boatao
+export default Botao

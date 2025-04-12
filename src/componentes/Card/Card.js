@@ -1,6 +1,6 @@
 import dados from '../../backend/dados.json'
-import { BiSolidStar } from "react-icons/bi";
 import { useNavigate } from 'react-router-dom'
+import Classificacao from '../Classificacao/Classificacao'
 
 function Card()
 {
@@ -13,7 +13,7 @@ function Card()
                     <img src = {`${process.env.PUBLIC_URL}/${dado.urlImage}`} alt = {dado.descricao} className='max-w-35'/>
                     <h3 className='font-bold'> { dado.nome } </h3>
                     <p> { dado.descricao } </p>
-                    <p className='flex gap-2 items-center'> <BiSolidStar className = "text-amber-300" /> { dado.classificacao }</p>
+                    <Classificacao classificacao = { dado.classificacao }/>
                 </div>
             ))}
         </>

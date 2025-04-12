@@ -1,13 +1,13 @@
 
 import { BiSolidStar } from "react-icons/bi";
-import styles from './Classificacao.module.css'
 
-function classificacao({classificacao})
+function Classificacao({classificacao, ...rest})
 {
     return (
-        <p style = {{display: "flex", alignItems: "center", gap: 0.3+"em", color: "gray"}}>         <BiSolidStar  className = { styles.iconStar } /> { classificacao }
+        <p className="flex justify-center items-center gap-2">         
+            <BiSolidStar  className = "text-amber-300" {...rest}/> { classificacao }
         </p>
     )
 }
 
-export default classificacao
+export default Classificacao
