@@ -1,0 +1,27 @@
+.btn
+{
+    text-align: center;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+    transition: all 0.2s ease-in-out;
+}
+
+.btn:active
+{
+    transform: scale(1.08);
+}
+
+.vermelho
+{
+    background-color: #DD1C1A;
+    color: white;
+}
+
+.preto
+{
+    color: white;
+    background-color: black;
+}

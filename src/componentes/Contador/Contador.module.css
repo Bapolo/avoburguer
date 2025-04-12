@@ -1,0 +1,13 @@
+.contador
+{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 0.5em;
+    padding: 1.em;
+}
+
+.contador, .contador p
+{
+    font-size: .9em;
+}

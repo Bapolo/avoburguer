@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "nome": "MisterBurguer",
+        "descricao": "Suculento",
+        "classificacao": 4.7,
+        "urlImage": "/imagens/hamburguers/misterburguer.png",
+        "preco": 3500,
+        "informacao": "MisterBurguer é mais do que apenas um hambúrguer comum. Ele prova que um simples hambúrguer pode ser uma experiência sofisticada."
+    },
+    {
+        "id": 2,
+        "nome": "SuperBurguer",
+        "descricao": "Saboroso",
+        "classificacao": 4.9,
+        "urlImage": "/imagens/hamburguers/superburguer.png",
+        "preco": 3000,
+        "informacao": "O Super Burger é um hambúrguer que combina um suculento disco de carne grelhada com bacon defumado e cebola, tudo isso é servido em um pão tostado perfeitamente."
+    },
+    {
+        "id": 3,
+        "nome": "SalmonBlast",
+        "descricao": "Sofisticado",
+        "classificacao": 4.9,
+        "urlImage": "/imagens/hamburguers/salmonblast.png",
+        "preco": 4200,
+        "informacao": "O SalmonBlast é um hambúrguer de salmão. Este hambúrguer apresenta um filé, temperado com uma combinação de ervas e especiarias, criando uma explosão de sabores."
+    },
+    {
+        "id": 4,
+        "nome": "FrangoBig",
+        "descricao": "Diferente",
+        "classificacao": 4.8,
+        "urlImage": "/imagens/hamburguers/frangobig.png",
+        "preco": 2800,
+        "informacao": "O FrangoBig é um hambúrguer que coloca o frango como protagonista. É a escolha ideal para aqueles que buscam uma opção mais leve, sem abrir mão do prazer de um bom hambúrguer."
+    }    
+]

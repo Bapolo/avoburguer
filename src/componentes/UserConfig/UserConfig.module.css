@@ -1,0 +1,31 @@
+.userConfig
+{
+    background-color: #DD1C1A;
+    height: 100vh;
+}
+
+.detalhesConfig
+{
+    background-color: white;
+    margin-top: 5em;
+    height: 100%;
+    position: relative;
+    padding-top: 5em;
+    border-radius: 3em 3em 0 0;
+}
+
+.detalhesConfig img
+{
+    position: absolute;
+    top: -2.3em;
+    left: calc(262px - 50vh);
+}
+
+.buttonGroup
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 1em;
+}
