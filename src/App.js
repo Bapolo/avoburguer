@@ -8,7 +8,7 @@ import UserConfig from './componentes/UserConfig/UserConfig.js'
 function App() {
 
   return (
-    <div>
+    <div className="h-full w-full">
       <HashRouter>
         <Routes>
           <Route path = '/' element = { <Home /> } />

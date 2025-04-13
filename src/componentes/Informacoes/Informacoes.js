@@ -17,7 +17,7 @@ function Informacoes()
     }, [contador,id])
 
     return (
-        <div key = {dados[id].id} className="flex flex-col items-center gap-3 text-gray-800 px-4 ">
+        <div key = {dados[id].id} className="flex flex-col items-center gap-3 text-gray-800 mt-3 py-6 px-4 ">
             <img src = {`${process.env.PUBLIC_URL}/${dados[id].urlImage}`} alt = { dados[id].descricao }/>
 
             <h2 className="text-3xl font-bold" > { dados[id].nome } </h2>

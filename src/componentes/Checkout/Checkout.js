@@ -3,7 +3,6 @@ import Barra from "../Barra/Barra"
 import { BiSearchAlt2 } from "react-icons/bi";
 import dados from '../../backend/dados.json'
 import FormularioPagamento from "../FormularioPagamento/FormularioPagamento";
-import styles from './Checkout.module.css'
 import { useNavigate,useParams } from 'react-router-dom'
 
 function Checkout()
@@ -12,20 +11,20 @@ function Checkout()
     const { id,preco } = useParams()
 
     return (
-        <div className = { styles.checkout }>
+        <div className = "">
             <Header />
             <Barra>
-                <h1 style = {{fontSize: 2+"em", fontWeight: 500}}>Pagamento</h1>
-                <BiSearchAlt2 style = {{color: "gray"}} />
+                <h1>Pagamento</h1>
+                <BiSearchAlt2 />
             </Barra>
-            <div className = { styles.info }>
-                <div>Pedido <p>{`${dados[id].nome}`}</p></div>
-                <div>Preço <p>{`KZ ${preco}`}</p></div>
-                <div>Imposto <p>{`KZ ${ preco * 0.1 }`}</p></div>
-                <div>Entrega <p>{`KZ ${ 1000}`}</p></div>
-                <hr />
-                <div style = {{fontWeight: "500"}}>Total <p>{`KZ ${1000 + Number(preco) + (Number(preco) * 0.1)}`}</p></div>
-                <div style = {{fontWeight: "500"}}>Tempo de entrega <p>{"20 min"}</p></div>
+            <div className = "px-4 py-6">
+                <div className="flex justify-between my-2">Pedido <p>{`${dados[id].nome}`}</p></div>
+                <div className="flex justify-between my-2">Preço <p>{`KZ ${preco}`}</p></div>
+                <div className="flex justify-between my-2">Imposto <p>{`KZ ${ preco * 0.1 }`}</p></div>
+                <div className="flex justify-between my-2">Entrega <p>{`KZ ${ 1000}`}</p></div>
+                <hr className="my-4"/>
+                <div className="flex justify-between font-medium my-2">Total <p>{`KZ ${1000 + Number(preco) + (Number(preco) * 0.1)}`}</p></div>
+                <div className="flex justify-between font-medium my-2">Tempo de entrega <p>{"20 min"}</p></div>
             </div>
 
             <FormularioPagamento />

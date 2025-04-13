@@ -1,9 +1,9 @@
 
 
-function Botao({ texto,onClick, className })
+function Botao({ texto,onClick, className,children })
 {
     return (
-            <button type = "button" onClick = {onClick} className={ className }>{ texto }</button>
+            <button type = "button" onClick = {onClick} className={ className }>{ texto }{ children }</button>
     )
 }
 

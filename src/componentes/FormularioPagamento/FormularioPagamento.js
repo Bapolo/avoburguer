@@ -1,5 +1,4 @@
 import { useState,useEffect } from 'react'
-import styles from './FormularioPagamento.module.css'
 import Visa from '../Visa/Visa'
 
 function FormularioPagamento()
@@ -42,21 +41,22 @@ function FormularioPagamento()
     }, [opcaoSelecionada])
 
     return (
-        <div className = { styles.formularioPagamento }>
-            <h2>Método de pagamento</h2>
-            <form onSubmit = {enviar} >
-                <label>
+        <div className = "py-2 px-4">
+            <h2 className="text-3xl font-medium mb-4">Método de pagamento</h2>
+
+            <form onSubmit = {enviar} className="flex flex-wrap items-center gap-4 my-6">
+                <label className="flex justify-center items-center gap-1 mb-4">
                     <input
                         type = "radio" 
                         name = "iban"
                         value = "iban"
                         checked = {opcaoSelecionada === 'iban'}
                         onChange = {selecionarOpcao}
-                    />
-                    <b className = { styles.texto }>Iban</b>
+                    /> 
+                    <p className="font-xl m-0">Iban</p>                    
                 </label>
 
-                <label>
+                <label className="flex justify-center items-center gap-4">
                     <input 
                         type = "radio"
                         name = "cash"
@@ -64,21 +64,21 @@ function FormularioPagamento()
                         checked = {opcaoSelecionada === 'cash'}
                         onChange = {selecionarOpcao}
                     /> 
-                    <b className = { styles.texto }>Multicaixa - Cash</b>
+                    <p>Cartão - Cash </p>                   
                 </label>
 
-                <label>
+                <label className="flex justify-center items-center gap-4">
                     <input 
                     type = "radio"
                     name = "visa"
                     value = "visa"
                     checked = {opcaoSelecionada === "visa"}
                     onChange = {selecionarOpcao}
-                    />
-                    <b className = { styles.texto }>Visa - MasterCard</b>
+                    /> 
+                    <p>Internacional</p>                    
                 </label>
             </form>
-            <div className = { styles.apresentacaoDaOpcaoSelecionada }>
+            <div className = "mt-5 text-xl">
                 {iban && <p>Faça a transferência o seguinte iban <b>0040 0000 1223 8374 9832 1</b> e mande o comprovante para o nosso Whatsapp</p>}
                 {cash && <p>O pagamento deve ser feito na entrega com valores em especie ou com um cartão multicaixa</p>}
                 {visa && <Visa />}

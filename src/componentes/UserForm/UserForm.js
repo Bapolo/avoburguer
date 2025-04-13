@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import styles from './UserForm.module.css'
 
 function UserForm()
 {
@@ -14,60 +13,60 @@ function UserForm()
     }
 
     return (
-        <>
-        <form onSubmit = {submit} className = { styles.userForm }>
-                <label htmlFor = "nome">
-                    Nome
-                </label>
-                    <input 
-                        type = "text"
-                        name = "nome"
-                        value = {nome}
-                        id = "nome"
-                        placeholder = "digite o seu nome"
-                        onChange = { (event) => setNome(event.target.value) }
-                    />
+    <form onSubmit = {submit} className = "flex flex-col gap-8 mb-8">
+            <label htmlFor = "nome" className = "flex flex-col gap-2 text-xl">
+                Nome
+                <input 
+                    type = "text"
+                    name = "nome"
+                    value = {nome}
+                    id = "nome"
+                    placeholder = "digite o seu nome"
+                    onChange = { (event) => setNome(event.target.value) }
+                    className="p-2 bg-gray-200 rounded-2xl"
+                />
+            </label>
                 
-
-                <label htmlFor = "email">
-                    Email
-                </label>
-                    <input
-                        type = "email"
-                        name = "email"
-                        value = {email}
-                        id = "email"
-                        placeholder = "digite o seu email"
-                        onChange = { (event) => setEmail(event.target.value) }
-                    />
+            <label htmlFor = "email" className = "flex flex-col gap-2 text-xl">
+                Email
+                <input
+                    type = "email"
+                    name = "email"
+                    value = {email}
+                    id = "email"
+                    placeholder = "digite o seu email"
+                    onChange = { (event) => setEmail(event.target.value) }
+                    className="p-2 bg-gray-200 rounded-2xl"
+                />
+            </label>
                 
-                <label htmlFor = "endereco">
-                    Endereço
-                </label>
-                    <input
+            <label htmlFor = "endereco" className = "flex flex-col gap-2 text-xl">
+                Endereço
+                <input
                     type = "text"
                     name = "endereco"
                     value = {endereco}
                     id = "endereco"
                     placeholder = "municipio,Bairro,Rua"
                     onChange = { (event) => setEndereco(event.target.value)}
+                    className="p-2 bg-gray-200 rounded-2xl"
                 />
-             
+            </label>
 
-                <label htmlFor = "password">
-                    Senha
-                </label>
-                    <input 
-                        type = "password"
-                        name = "senha"
-                        value = {senha}
-                        placeholder = "senha"
-                        id = "password"
-                        onChange = { (event) => setSenha(event.target.value)}
+            <label htmlFor = "password" className = "flex flex-col gap-2 text-xl">
+                Senha
+                <input 
+                    type = "password"
+                    name = "senha"
+                    value = {senha}
+                    placeholder = "senha"
+                    id = "password"
+                    onChange = { (event) => setSenha(event.target.value)}
+                    className="p-2 bg-gray-200 rounded-2xl"
                 />
-                
-            </form>
-        </>
+            </label>                
+            
+        </form>
     )
 }
 
